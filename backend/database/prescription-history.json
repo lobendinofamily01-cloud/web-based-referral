@@ -1,0 +1,56 @@
+{
+  "prescriptions": [
+    {
+      "issue": "High number of incidents related to \"Bullying\" (5 cases).\n\nThis trend requires immediate attention and strategic intervention.",
+      "context": {
+        "category": "Bullying",
+        "numberOfCases": "5"
+      },
+      "solution": {
+        "severity": "high",
+        "root_cause": "Multiple bullying incidents suggest a lack of clear anti-bullying protocols and insufficient peer intervention training among students.",
+        "solutions": [
+          {
+            "title": "Immediate Peer Mediation Training",
+            "steps": [
+              "Train student ambassadors in conflict resolution",
+              "Establish peer support networks in each grade",
+              "Create anonymous reporting systems"
+            ],
+            "impact": "Students will have trusted peers to turn to and multiple pathways for reporting incidents."
+          },
+          {
+            "title": "Enhanced Adult Supervision Protocol",
+            "steps": [
+              "Increase supervision in hotspot areas during breaks",
+              "Implement rotating staff monitoring schedules",
+              "Brief all staff on bullying identification signs"
+            ],
+            "impact": "Earlier detection and intervention of bullying behaviors before escalation occurs."
+          },
+          {
+            "title": "Restorative Justice Circle Implementation",
+            "steps": [
+              "Facilitate mediated conversations between involved parties",
+              "Focus on understanding impact and rebuilding relationships",
+              "Follow up with ongoing support check-ins"
+            ],
+            "impact": "Addresses root causes of conflict while building empathy and preventing repeat incidents."
+          }
+        ],
+        "quick_wins": [
+          "Send immediate email to all staff highlighting bullying warning signs",
+          "Post anonymous reporting QR codes in high-traffic student areas"
+        ]
+      },
+      "timestamp": "2025-12-11T16:59:24.766Z",
+      "weekKey": "2025-W50",
+      "week": 50,
+      "year": 2025,
+      "aiModel": "claude-sonnet-4",
+      "createdBy": "69323cb2489633db14519afd"
+    }
+  ],
+  "currentWeek": "2025-W50",
+  "weekStartDate": "2025-12-07T16:00:00.000Z"
+}
