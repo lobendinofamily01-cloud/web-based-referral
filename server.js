@@ -80,9 +80,8 @@ const aiPrescriptionRoutes = require('./routes/aiPrescriptions');
 // Register the routes (add this with your other routes)
 app.use('/api/ai-prescriptions', aiPrescriptionRoutes);
 
-// ===== 🎯 ROOT ROUTE - THIS IS WHAT WAS MISSING! =====
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/pages/LoginForm.html'));
+  res.send(`...inline HTML...`);
 });
 
 // ===== HTML Routes =====
@@ -175,5 +174,6 @@ const analyticsRoutes = require('./routes/analytics');
 // Register the routes
 
 app.use('/api/analytics', analyticsRoutes);
+
 
 
