@@ -80,7 +80,13 @@ const aiPrescriptionRoutes = require('./routes/aiPrescriptions');
 // Register the routes (add this with your other routes)
 app.use('/api/ai-prescriptions', aiPrescriptionRoutes);
 
-// ===== Default route - Login Page =====
+// ===== 🎯 ROOT ROUTE - THIS IS WHAT WAS MISSING! =====
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/pages/LoginForm.html'));
+});
+
+// ===== HTML Routes =====
+// Login Form
 app.get('/LoginForm.html', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/pages/LoginForm.html'));
 });
@@ -109,11 +115,6 @@ app.get('/ProfileSettings.html', (req, res) => {
 // Change Password
 app.get('/ChangePassword.html', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/pages/ChangePassword.html'));
-});
-
-// Login Form
-app.get('/LoginForm.html', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/pages/LoginForm.html'));
 });
 
 // Adviser Routes
@@ -174,4 +175,5 @@ const analyticsRoutes = require('./routes/analytics');
 // Register the routes
 
 app.use('/api/analytics', analyticsRoutes);
+
 
